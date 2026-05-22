@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Giacenza extends Model
 {
+    protected $table = 'giacenze';
     protected $fillable = ['tenant_id', 'articolo_id', 'magazzino_id', 'quantita'];
     protected $casts = ['quantita' => 'decimal:4'];
 
